@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/LR2/assets/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/LR2/assets/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body>
+        <div class="form">
+            <form method="post" class="form-regestration">
+                <label for="lastname"
+                    >Введіть своє Прізвище
+                    <input type="text" id="lastname" name="lastname" placeholder="Прізвище" required /><sup>*</sup>
+                </label>
+                <label for="firstname">
+                    Введіть своє імя
+                    <input type="text" id="firstname" name="firstname" placeholder="Ім'я " required /><sup>*</sup>
+                </label>
+                <label for="patronymic">
+                    Введіть своє по батькові
+                    <input type="text" id="patronymic" name="patronymic" placeholder="По батькові " required /><sup
+                        >*</sup
+                    >
+                </label>
+                <label for="email">
+                    Введіть свій особистий email у вигляді - @gmail.com
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required /><sup>*</sup>
+                </label>
+                <label for="password">
+                    Введіть свій особистий пароль у вигляді - 34Аdfdf/
+                    <input type="password" id="password" placeholder="password" /><sup>*</sup>
+                </label>
+                <label for="age">
+                    Введіть свій вік
+                    <input type="number" name="age" id="age" placeholder="" min="16" max="50" />
+                </label>
+                <label for="gender1" for="gender2"> Вкажіть свою стать М\Ж-- </label>
+                <label> <input type="radio" class="radio" value="female" name="gender" id="gender1" />Жіноча</label>
+                <label> <input type="radio" class="radio" value="male" name="gender" id="gender2" />Чоловіча</label>
+                <label> <input type="checkbox" class="check" name="newsletter" />Підписатись на новини </label>
+                <label for="city">
+                    Місто
+                    <select id="city">
+                        <option value="kha">Харків</option>
+                        <option value="kiy">Київ</option>
+                        <option value="odes">Одеса</option>
+                        <option value="lviv">Львів</option>
+                        <option value="poltava">Полтава</option>
+                        <option value="sumi">Суми</option>
+                    </select>
+                </label>
+                <label for="university">
+                    Хобі
+                    <select id="university">
+                        <option value="khnyre">ХНУРЕ</option>
+                        <option value="kpi">КПІ</option>
+                        <option value="lpy">ЛПУ</option>
+                        <option value="khney">ХНЕУ</option>
+                        <option value="khai">ХАІ</option>
+                        <option value="kney">КНЕУ</option>
+                    </select>
+                </label>
+                <label for="English">
+                    Оберіть свій ріввень анг мови
+                    <select id="English">
+                        <option value="a1">А1</option>
+                        <option value="a2">А2</option>
+                        <option value="b1">В1</option>
+                        <option value="b2">В2</option>
+                        <option value="c1">С1</option>
+                        <option value="c2">С2</option>
+                    </select>
+                </label>
+
+                <label>
+                    Оберіть сьогоднішню дату заповнення форми
+                    <input type="date" name="date" />
+                </label>
+                <label for="textarea">
+                    <textarea rows="4"> </textarea>
+                </label>
+                <div class="button">
+                    <!--      <input type="submit" value="Надіслати дані" /> -->
+                    <!--     <input type="reset" value="Скинути дані" /> -->
+                    <button type="submit">Надіслати</button>
+                    <button type="submit">Скинути</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
