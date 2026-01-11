@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/LR2/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/LR2/assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+<div class="form">
+<form method="post" class="form-regestration">
+
+    <label for="lastname">
+        Введіть своє прізвище
+    </label>
+    <input type="text" id="lastname" name="lastname" placeholder="Прізвище" required>
+    <sup>*</sup>
+
+    <label for="firstname">
+        Введіть своє імʼя
+    </label>
+    <input type="text" id="firstname" name="firstname" placeholder="Імʼя" required>
+    <sup>*</sup>
+
+    <label for="patronymic">
+        Введіть по батькові
+    </label>
+    <input type="text" id="patronymic" name="patronymic" placeholder="По батькові" required>
+    <sup>*</sup>
+
+    <label for="email">
+        Email (@gmail.com)
+    </label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+    <sup>*</sup>
+
+    <label for="password">
+        Пароль
+    </label>
+    <input type="password" id="password" placeholder="password">
+    <sup>*</sup>
+
+    <label for="age">
+        Вік
+    </label>
+    <input type="number" id="age" name="age" min="16" max="50">
+
+    <label>Вкажіть свою стать</label>
+    <label>
+        <input type="radio" name="gender" value="female"> Жіноча
+    </label>
+    <label>
+        <input type="radio" name="gender" value="male"> Чоловіча
+    </label>
+
+    <label>
+        <input type="checkbox" name="newsletter"> Підписатись на новини
+    </label>
+
+    <label for="city">Місто</label>
+    <select id="city">
+        <option value="kha">Харків</option>
+        <option value="kiy">Київ</option>
+        <option value="odes">Одеса</option>
+        <option value="lviv">Львів</option>
+        <option value="poltava">Полтава</option>
+        <option value="sumi">Суми</option>
+    </select>
+
+    <label>
+        Дата заповнення
+        <input type="date" name="date">
+    </label>
+
+    <label for="textarea">Коментар</label>
+    <textarea id="textarea" rows="4"></textarea>
+
+    <div class="button">
+        <button type="submit">Надіслати</button>
+        <button type="reset">Скинути</button>
+    </div>
+
+</form>
+</div>
+</body>
+</html>
+
